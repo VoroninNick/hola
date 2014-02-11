@@ -1,8 +1,18 @@
+#top-bar{
+  ul.title-area{
+    li{
+      height:100px;
+      vertical-align: middle;
+    }
+  }
+}
+
 .top-bar-section ul li > a{
       //font-size: 1rem;
       //line-height: 2rem;
       //height: 1rem;
       text-transform: uppercase;
+
     }
 
 .top-bar-section ul{
@@ -12,4 +22,10 @@
 .top-bar-section ul li {
   height: 100px;
   line-height: 100px;
+}
+
+#topbar-social{
+  .item a{
+    padding: 0 ( $column-gutter / 2 );
+  }
 }

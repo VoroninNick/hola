@@ -1,4 +1,4 @@
-#home-services{
+#home-services {
   background-color: #8ab71c;
   .row{
     height: 140px;
@@ -7,6 +7,21 @@
     .item{
       height: inherit;
       line-height: inherit;
+      text-align: center;
+    }
+  }
+}
+
+#recommended > .row {
+  background-color: $light-blue;
+  h2{
+    text-align: center;
+  }
+
+  .item{
+    i.fi-heart{
+      color: $pink;
+      font-size: rem-calc(26);
     }
   }
 }

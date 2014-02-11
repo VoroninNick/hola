@@ -49,3 +49,5 @@ gem 'rails_admin'
 gem 'protected_attributes'
 gem 'foundation-rails'
 gem 'slim-rails'
+
+gem 'foundation-icons-sass-rails'

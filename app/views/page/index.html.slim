@@ -4,21 +4,30 @@
 #home-services
   .row
     .item.columns.large-2
-      = image_tag( 'service1.jpg' )
+      = link_to( image_tag( 'service1.jpg' ), '#' )
     .item.columns.large-2
-      = image_tag( 'service1.jpg' )
+      = link_to( image_tag( 'service1.jpg' ), '#')
     .item.columns.large-2
-      = image_tag( 'service1.jpg' )
+      = link_to( image_tag( 'service1.jpg' ), '#')
     .item.columns.large-2
-      = image_tag( 'service1.jpg' )
+      = link_to( image_tag( 'service1.jpg' ), '#')
     .item.columns.large-2
-      = image_tag( 'service1.jpg' )
+      = link_to( image_tag( 'service1.jpg' ), '#')
     .item.columns.large-2
-      = image_tag( 'service1.jpg' )
+      = link_to( image_tag( 'service1.jpg' ), '#')
 
 
-.row
-  #recommended
-    h2
-      |Рекомендовані квартири
-    .item.columns.large-4
+#recommended
+  .row
+    .columns.large-12
+      h2
+        |Рекомендовані квартири
+    .columns.large-12
+      .row
+        .item.columns.large-4
+          = link_to( image_tag( 'recommended1.jpg' ), '#' )
+          .row.collapse.right
+            a href='#'
+              i.social.fi-heart
+            i.social.fi-heart
+            i.social.fi-heart

@@ -1,0 +1,11 @@
+.relative{
+  position: relative;
+
+  &:before, &:after{
+    content:"";
+    position: relative;
+    clear: both;
+    float: left;
+    display: block;
+  }
+}
