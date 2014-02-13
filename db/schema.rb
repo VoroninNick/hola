@@ -11,7 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140211090424) do
+ActiveRecord::Schema.define(version: 20140213101256) do
+
+  create_table "appartment_items", force: true do |t|
+    t.integer  "rooms_quantity"
+    t.integer  "region_id_id"
+    t.integer  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "appartment_items", ["region_id_id"], name: "index_appartment_items_on_region_id_id"
+
+  create_table "fast_orders", force: true do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "email"
+    t.integer  "rooms_quantity"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.integer  "region_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

@@ -93,29 +93,66 @@
     .columns.large-12
       h2.section-title
         |Зараз вільні
-    .columns.large-12
-      #collection.row
-        .item.columns.large-2
-          = link_to( image_tag( 'recommended1.jpg' ), '#' )
-          .social-wrapper.clearfix
-            .row.collapse.right
-              .columns.social
-                a href='#'
-                  i.fi-heart
-                span
-                  |344
-              .columns.social
-                a href='#'
-                  i.social.fi-heart
-                span
-                  |233
-              .columns.social
-                a href='#'
-                  i.social.fi-heart
-                span
-                  |143
+    #collection.columns.large-12
+      .row
+        - for i in 1..12
+          .item.columns.large-2
+            = link_to( image_tag( 'recommended1.jpg' ), '#' )
+            .social-wrapper.clearfix
+              .row.collapse.right
+                .columns.social
+                  a href='#'
+                    i.fi-heart
+                  span
+                    |344
+                .columns.social
+                  a href='#'
+                    i.social.fi-heart
+                  span
+                    |233
+                .columns.social
+                  a href='#'
+                    i.social.fi-heart
+                  span
+                    |143
 
 
 
 
 
+#map-section
+  .columns
+    h2.section-title
+      |Наші квартири на мапі
+  .google-maps-wrapper
+    #map.box-shadow-right-bottom
+
+
+#form-section
+  h2.section-title
+    |Форма швидкого пошуку
+  = simple_form_for @fast_order do |f|
+    #form.row
+      #contact-data.columns.large-4
+        .field
+          = f.input :name
+        .field
+          = f.input :phone
+        .field
+          = f.input :email
+      #query-data.columns.large-8
+        #what-are-you-looking-for.row
+          .field.columns.large-8
+            = f.input :rooms_quantity, collection: 18..60
+          .field
+            = f.input :region_id, collection: 1..10
+        #waititng-date
+          .field
+            = f.input :start_date, collection: 1..31
+          .field
+            = f.input :end_date, collection: 1..31
+
+        #tip-and-submit
+          #tip
+          .field
+            = f.button :submit

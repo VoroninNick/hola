@@ -21,3 +21,7 @@
 @mixin window(){
   @include radius(0 0 30px 15px);
 }
+
+$section-vertical-indent: rem-calc(50);
+
+$field-height: 65px;

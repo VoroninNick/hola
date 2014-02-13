@@ -6,13 +6,17 @@ html lang="en"
 
     title == content_for?(:title) ? yield(:title) : "Untitled"
 
-  = stylesheet_link_tag "application"
-  = javascript_include_tag "vendor/modernizr"
-  = csrf_meta_tag
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "vendor/modernizr"
+    = csrf_meta_tag
+    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?sensor=false"
 
-body
 
-  == render partial: 'partials/header'
-  == yield
+  body
 
-  = javascript_include_tag "application"
+    == render partial: 'partials/header'
+    == yield
+
+    = render partial: 'partials/footer'
+
+    = javascript_include_tag "application"

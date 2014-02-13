@@ -51,3 +51,5 @@ gem 'foundation-rails'
 gem 'slim-rails'
 
 gem 'foundation-icons-sass-rails'
+
+gem 'simple_form'
