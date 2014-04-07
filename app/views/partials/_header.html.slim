@@ -1,27 +1,69 @@
-.row
-  nav#top-bar.top-bar
-    .title-area
-      = link_to( image_tag( 'logo.jpg' ), '#' )
-    section.top-bar-section
+/.row
+/  nav#top-bar.top-bar
+/    .title-area
+/      = link_to( image_tag( 'logo.jpg' ), '#' )
+/    section.top-bar-section
+/      ul.right
+/        li
+/          = link_to( 'Про нас', 'about' )
+/        li
+/          = link_to( 'Про нас', 'about' )
+/        li
+/          = link_to( 'Про нас', 'about' )
+/        li
+/          = link_to( 'Про нас', 'about' )
+/
+/        li#topbar-social.row.collapse
+/            .item.columns.large-3
+/              = link_to( image_tag( 'facebook.jpg' ), '#' )
+/            .item.columns.large-3
+/              = link_to( image_tag( 'facebook.jpg' ), '#')
+/            .item.columns.large-3
+/              = link_to( image_tag( 'facebook.jpg' ), '#' )
+/            .item.columns.large-3
+/              = link_to( image_tag( 'facebook.jpg' ), '#' )
+/
+/
+/
+
+
+
+.desktop-header
+  .row
+    #address.columns.large-3
+      p.text
+        |вул. Сахарова, 17, м. Львыв, Украина
+
+
+
+
+    #languages-bar.columns.large-2.right
+      ul
+        li
+          = link_to( 'UA', '#' )
+        li
+          = link_to( 'RU', '#' )
+        li
+          = link_to( 'PL', '#' )
+        li
+          = link_to( 'EN', '#' )
+
+
+    #social-links.columns.large-2.right
+      ul
+        li
+          = link_to( image_tag( 'facebook.jpg' ), '#' )
+        li
+          = link_to( image_tag( 'facebook.jpg' ), '#' )
+
+
+    #menu.columns.large-3.right
       ul.right
         li
-          = link_to( 'Про нас', 'about' )
+          = link_to( 'Про нас', '#' )
         li
-          = link_to( 'Про нас', 'about' )
+          = link_to( 'Новини', '#' )
         li
-          = link_to( 'Про нас', 'about' )
-        li
-          = link_to( 'Про нас', 'about' )
-
-        li#topbar-social.row.collapse
-            .item.columns.large-3
-              = link_to( image_tag( 'facebook.jpg' ), '#' )
-            .item.columns.large-3
-              = link_to( image_tag( 'facebook.jpg' ), '#')
-            .item.columns.large-3
-              = link_to( image_tag( 'facebook.jpg' ), '#' )
-            .item.columns.large-3
-              = link_to( image_tag( 'facebook.jpg' ), '#' )
+          = link_to( 'Корисны статті', '#' )
 
 
-#banner

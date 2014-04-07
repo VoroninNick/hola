@@ -1,0 +1,25 @@
+.relative
+  position: relative
+
+  &:before, &:after
+    content: ""
+    position: relative
+    clear: both
+    float: left
+    display: block
+
+
+.section-title
+  text-transform: uppercase
+  text-align: center
+  font-weight: 700
+
+
+
+@mixin window()
+  @include radius(0 0 30px 15px)
+
+
+$section-vertical-indent: rem-calc(50)
+
+$field-height: 65px

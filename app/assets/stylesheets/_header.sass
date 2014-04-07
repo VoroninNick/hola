@@ -1,0 +1,102 @@
+#top-bar
+  ul.title-area
+    li
+      height: 100px
+      vertical-align: middle
+
+
+
+
+.top-bar-section ul li > a
+  //font-size: 1rem;
+  //line-height: 2rem;
+  //height: 1rem;
+  text-transform: uppercase
+
+
+.top-bar-section ul
+  background-color: transparent
+
+
+.top-bar-section ul li
+  height: 100px
+  line-height: 100px
+
+
+#topbar-social
+  .item a
+    padding: 0 ( $column-gutter / 2 )
+    background-color: transparent
+
+
+
+$desktop-header-height: rem-calc(30)
+
+.desktop-header
+  background: $light-blue
+  height: $desktop-header-height
+
+  ul
+    li
+      list-style: none
+      float: left
+
+
+  #address
+    color: #959698
+    font-size: 0.8rem
+
+    p
+      font: inherit
+      margin: 0
+      line-height: $desktop-header-height
+
+
+  #social-links
+    ul
+      li
+        margin-left: rem-calc(9)
+
+        img
+          width: 25px
+          height: 25px
+
+        &:first-child
+          margin-left: 0
+
+  #menu
+    font-size: 0.8rem
+    color: #959698
+
+    ul
+      margin-left: 0
+
+      li
+        margin-left: rem-calc(35)
+
+        a
+          color: #959698
+          font-size: 0.8rem
+
+        &:first-child
+          margin-left: 0
+
+
+  #languages-bar
+    color: white
+
+    ul
+      li
+        width: rem-calc(25)
+        height: rem-calc(25)
+
+        margin-left: rem-calc(9)
+
+        a
+          color: white
+          font-weight: 900
+          font-size: 0.7rem
+
+
+        &:first-child
+          margin-left: 0
